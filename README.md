@@ -103,7 +103,7 @@ public class Test1
 					                ft= st;
 					                st = tt;
 					            }
-				            System.out.println();
+				           
 				            break;
 		
 				case 4:
