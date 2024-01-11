@@ -91,19 +91,20 @@ public class Test1
 				case 3:
 					System.out.println("Accept a no from the user and  display the fibonacci series(0 1 1 2 3 5 .....)");
 					System.out.println("Enter a number :");
-					//ft is first term that is o and st is second term that is 1
-					int ft=0,st=1;
-					//fib is the value that we take from user(i.e., of how many no do you want see in fib series)
-					int summ,fib;
-					fib=sc.nextInt();
-					for(int i=1;i<=fib;i++)
-					{
-						summ=ft+st;
-						System.out.println(fib);
-						ft=st;
-						st=fib;
-					}
-					break;
+					//ft is first term that is 0 and st is second term that is 1 and tt is third term that is going tobe addition of ft and st
+					//fib is the value that we are going to take from user(how  no of series of fibonacci ?)
+				        	int fib = sc.nextInt();
+				        	int ft = 0, st = 1, tt;
+				           	System.out.print("Fibonacci Series: ");
+					            for (int i = 1; i <= fib; i++)
+				                   {
+					                System.out.println(ft + " ");
+					                tt = ft + st;
+					                ft= st;
+					                st = tt;
+					            }
+				            System.out.println();
+				            break;
 		
 				case 4:
 					System.out.println("Accept no from user and check it is armstrong or not");
