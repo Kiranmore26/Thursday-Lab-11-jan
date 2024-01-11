@@ -91,18 +91,17 @@ public class Test1
 				case 3:
 					System.out.println("Accept a no from the user and  display the fibonacci series(0 1 1 2 3 5 .....)");
 					System.out.println("Enter a number :");
-					//ft stands for first term and st stands for second term & summ stands for the sum
-					//i is an variable with value 1 which goes on increasing using i++(increment operator).
-					int num1=sc.nextInt();
-					int ft=0,st=1,summ,i=1;
-					//we are using while loop because it will goes on un-till the condition is true
-					while( i<=num1)
+					//ft is first term that is o and st is second term that is 1
+					int ft=0,st=1;
+					//fib is the value that we take from user(i.e., of how many no do you want see in fib series)
+					int summ,fib;
+					fib=sc.nextInt();
+					for(int i=1;i<=fib;i++)
 					{
 						summ=ft+st;
-						System.out.println(summ);
+						System.out.println(fib);
 						ft=st;
-						st=summ;
-						i++;
+						st=fib;
 					}
 					break;
 		
