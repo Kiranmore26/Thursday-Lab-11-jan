@@ -8,7 +8,8 @@ package Anudip;
 3:Accept a no from the user and  display the fibonacci series(0 1 1 2 3 5 .....)
 4:Accept no from user and check it is armstrong or not
 5: Accept 5 no and find out the greatest
-6:Make a calculator
+6:Display the Month
+7:Make a Calculator 
  */
 
 import java.util.Scanner;
@@ -32,7 +33,8 @@ public class Test1
 					+"Enter 3:Accept a no from the user and  display the fibonacci series(0 1 1 2 3 5 .....) \r \n"
 					+"Enter 4:Accept no from user and check it is armstrong or not \r \n"
 					+"Enter 5:Accept 5 no and find out the greatest \r \n"
-					+"Enter 6:To display the Month \r ");
+					+"Enter 6:To display the Month \r \n"
+					+"Enter 7:To display the calculator");
 			
 			//choice :to choose a no from given options
 			int choice=sc.nextInt();
@@ -228,10 +230,75 @@ public class Test1
 				
 				break;
 				
+			case 7:
+				//for creating a calculator we are use switch case 
+				System.out.println("Make a calculator");
+				/*we are using double data type because in division of 2 number
+				 *  we can't get value in points . while entering a number we can
+				 *  store a number with point
+				 */
+				System.out.println("Enter First Number : ");
+				double first_no=sc.nextDouble();
+				System.out.println("Enter Second Number : ");
+				double second_no=sc.nextDouble();
+				//op stands for operator  and operator in calculator are +,-,/,*,%
+				System.out.println("Enter a operator ");
+				char op=sc.next().charAt(0);
+				    switch (op)
+				    {
+				    //(+ and add) stands for addition of 2 number 
+					case '+':
+						{
+							double add=first_no+second_no;
+							System.out.println("Addition of two number : "+add);
+						}
+						
+						break;
+						//(- and sub) stands for subtraction of 2 number 
+					case '-':
+						{
+							double sub=first_no-second_no;
+							System.out.println("Subtraction of two number : "+sub);
+						}
+						
+						break;
+						//(* and Mul) stands for multiplication of 2 number 
+					case '*':
+						{
+							double Mul=first_no*second_no;
+							System.out.println("Multiplication  of two number : "+Mul);
+						}
+						
+						break;
+						//(/ and Div) stands for division of 2 number 
+					case '/':
+						{
+							double Div=first_no/second_no;
+							System.out.println("Division  of two number : "+Div);
+						}
+						
+						break;
+						//(% and mod) stands for module of 2 number 
+					case '%':
+					{
+						double  mod=first_no%second_no;
+						System.out.println("Module  of two number : "+mod);
+					}
+					
+					break;
+
+					default:
+						break;
+					}
+				
+				break;
+				
 				
 			default:
 				System.out.println("You have made a Wrong Choice....Re-enter The No");
 				break;
+				
+				
 			}
 			
 			//if we type yes then we can perform next perform
@@ -246,6 +313,7 @@ public class Test1
 	}
 
 }
+
 
 
 
